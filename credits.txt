@@ -1,0 +1,29 @@
+💾 Simp1OS v0.01 - Project Credits
+Lead Architect & Kernel Developer:
+
+Arush (arush178 / arush179)
+
+The person who fought the linker and won.
+
+Development Organization:
+
+Oblivision Organisation
+
+Turning "Abstract Art" into Operating Systems since 2026.
+
+Special Thanks:
+
+The "Two Brave Souls": For downloading the ISO when it was mostly scrambled text.
+
+The G++ Compiler: For the 1,000+ errors that made me a better dev.
+
+QEMU: For being the only window that stays yellow when I ask it to.
+
+The Dev.to Community: For witnessing the "Temporary Halt" and the "Great Scramble."
+
+🛠️ Technical Stack
+Language: C++, NASM Assembly
+
+Bootloader: Multiboot Header (Custom)
+
+Graphics: Linear Framebuffer (1024x768)
