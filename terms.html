@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Terms and Conditions</title>
+
+<style>
+body {
+    font-family: Arial;
+    margin: 20px;
+    text-align: center;
+}
+
+.box {
+    border: 2px solid black;
+    padding: 15px;
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #f5f5f5;
+    text-align: left;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.agree { background-color: green; color: white; }
+.deny  { background-color: gray; color: white; }
+</style>
+
+<script>
+function agreeDownload() {
+
+    // download ISO
+    document.getElementById("isoDownload").click();
+
+    // download credit file after small delay
+    setTimeout(function () {
+        document.getElementById("creditDownload").click();
+    }, 500);
+}
+
+function denyDownload() {
+    alert("Sorry, can't download the ISO");
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>You must agree to the terms to download the ISO</h2>
+
+<div class="box">
+<p>
+1. Ownership and Branding
+Simp1OS is a proprietary operating system developed by Oblivision and its founder, Arush Tripathi All splash screens, boot messages, installer logic, and branding elements are intellectual property of Ronds.
+ 2. Usage Rights
+By installing, booting, or interacting with Simp1OS, you agree to the following:
+You are granted permission to use and modify Simp1OS for personal use only.
+You do not have the right to edit, reproduce, redistribute, or rebrand Simp1OS in any form.
+Any changes made to the OS are limited to your own system and must not be shared publicly or commercially.
+ 3. Disclaimer of Liability
+Neither Oblivision nor its programmers shall be held responsible for:
+Any damage to hardware, software, data, or emotional state caused by Simp1OS
+Kernel panics, bootloader failures, splash screen glitches, or installer bugs
+Any consequences arising from modification, misuse, or experimental deployment
+Use Simp1OS at your own risk. Debug with founder-grade caution.
+ 4. No Warranty
+Simp1OS is provided “as-is.” No guarantees are made regarding stability, compatibility, or performance. It is a legacy artifact—not a commercial product.
+ 5. Legacy Clause
+Simp1OS is part of the Oblivision . You may contribute splash screens, installer mods, or game vault entries only with written permission from the founder. Unauthorized forks or clones will be treated as violations of the legacy.
+ 6. Updates and Enforcement
+OBLIVISION reserves the right to update these terms at any time. All changes will be logged as part of the Simp1OS  and reflected in future splash messages or installer prompts..
+</p>
+</div>
+
+<br>
+
+<button class="agree" onclick="agreeDownload()">Agree</button>
+<button class="deny" onclick="denyDownload()">Deny</button>
+
+<!-- hidden download links -->
+<a id="isoDownload" href="Simp1OS.iso" download style="display:none;"></a>
+<a id="creditDownload" href="credits.txt" download style="display:none;"></a>
+
+</body>
+</html>
